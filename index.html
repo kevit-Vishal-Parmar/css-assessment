@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Assessment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-title">
+            <h1>Audit Activity</h1>
+            <p>Recent security and configuration events</p>
+        </div>
+        <div class="header-actions">
+            <div class="action-button">
+                <button class="btn-refresh">
+                    <span class="material-symbols-outlined">refresh</span>
+                    Refresh
+                </button>
+            </div>
+            <div class="action-button">
+                <button class="btn-export">
+                    <span class="material-symbols-outlined">arrow_downward</span>
+                    Export
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="summary-container">
+            <div class="summary-title">
+                <h2>Audit Summary</h2>
+            </div>
+            <div class="summary-cards">
+                <div class="summary-card">
+                    <div class="card-title">Total Events</div>
+                    <div class="card-value">125</div>
+                </div>
+                <div class="summary-card">
+                    <div class="card-title">High Risk</div>
+                    <div class="card-value">68</div>
+                </div>
+                <div class="summary-card">
+                    <div class="card-title">Failed</div>
+                    <div class="card-value">32</div>
+                </div>
+                <div class="summary-card">
+                    <div class="card-title">Actors</div>
+                    <div class="card-value">25</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="audit-container">
+            <div class="audit-card">
+                <div class="audit-details">
+                    <div class="audit-title">
+                        <p>Login failed (invalid credentials)</p>
+                        <div class="audit-time">2026-01-01 12:00:00</div>
+                    </div>
+                    <div class="audit-severities">
+                        <div class="high-severity">HIGH</div>
+                        <div class="outcome-failed">FAIL</div>
+                    </div>
+                </div>
+                <div class="audit-metadata">
+                    <div class="metadata">
+                        <div class="key">Actor:</div>
+                        <div class="value">Aiden Brooks</div>
+                    </div>
+                    <div class="metadata">
+                        <div class="key">Entity:</div>
+                        <div class="value">User</div>
+                    </div>
+                    <div class="metadata">
+                        <div class="key">ID:</div>
+                        <div class="value">USR-1042-LONG-ID-EXAMPLE-TO-TEST-ELLIPSIS</div>
+                    </div>
+                    <div class="metadata">
+                        <div class="key">IP:</div>
+                        <div class="value">10.10.4.22</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="audit-card">
+                <div class="audit-details">
+                    <div class="audit-title">
+                        <p>Role updated (permissions changed)</p>
+                        <div class="audit-time">2026-01-01 12:15:00</div>
+                    </div>
+                    <div class="audit-severities">
+                        <div class="medium-severity">MED</div>
+                        <div class="outcome-success">SUCCESS</div>
+                    </div>
+                </div>
+                <div class="audit-metadata">
+                    <div class="metadata">
+                        <div class="key">Actor:</div>
+                        <div class="value">Maya Patel</div>
+                    </div>
+                    <div class="metadata">
+                        <div class="key">Entity:</div>
+                        <div class="value">Role</div>
+                    </div>
+                    <div class="metadata">
+                        <div class="key">ID:</div>
+                        <div class="value">ROL-220</div>
+                    </div>
+                    <div class="metadata">
+                        <div class="key">IP:</div>
+                        <div class="value">10.10.1.18</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="audit-card">
+                <div class="audit-details">
+                    <div class="audit-title">
+                        <p>Risk threshold changed for transaction scoring engine</p>
+                        <div class="audit-time">2026-01-01 12:30:00</div>
+                    </div>
+                    <div class="audit-severities">
+                        <div class="high-severity">HIGH</div>
+                        <div class="outcome-success">SUCCESS</div>
+                    </div>
+                </div>
+                <div class="audit-metadata">
+                    <div class="metadata">
+                        <div class="key">Actor:</div>
+                        <div class="value">Ethan Reed</div>
+                    </div>
+                    <div class="metadata">
+                        <div class="key">Entity:</div>
+                        <div class="value">Config</div>
+                    </div>
+                    <div class="metadata">
+                        <div class="key">ID:</div>
+                        <div class="value">CFG-77</div>
+                    </div>
+                    <div class="metadata">
+                        <div class="key">IP:</div>
+                        <div class="value">10.11.3.9</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="audit-card">
+                <div class="audit-details">
+                    <div class="audit-title">
+                        <p>User created</p>
+                        <div class="audit-time">2026-01-01 12:45:00</div>
+                    </div>
+                    <div class="audit-severities">
+                        <div class="low-severity">LOW</div>
+                        <div class="outcome-success">SUCCESS</div>
+                    </div>
+                </div>
+                <div class="audit-metadata">
+                    <div class="metadata">
+                        <div class="key">Actor:</div>
+                        <div class="value">Sofia Nguyen</div>
+                    </div>
+                    <div class="metadata">
+                        <div class="key">Entity:</div>
+                        <div class="value">User</div>
+                    </div>
+                    <div class="metadata">
+                        <div class="key">ID:</div>
+                        <div class="value">USR-1108</div>
+                    </div>
+                    <div class="metadata">
+                        <div class="key">IP:</div>
+                        <div class="value">10.10.8.41</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="audit-card">
+                <div class="audit-details">
+                    <div class="audit-title">
+                        <p>Permission denied while updating watchlist entry</p>
+                        <div class="audit-time">2026-01-01 13:00:00</div>
+                    </div>
+                    <div class="audit-severities">
+                        <div class="medium-severity">MED</div>
+                        <div class="outcome-failed">FAIL</div>
+                    </div>
+                </div>
+                <div class="audit-metadata">
+                    <div class="metadata">
+                        <div class="key">Actor:</div>
+                        <div class="value">Noah Carter</div>
+                    </div>
+                    <div class="metadata">
+                        <div class="key">Entity:</div>
+                        <div class="value">WatchlistEntry</div>
+                    </div>
+                    <div class="metadata">
+                        <div class="key">ID:</div>
+                        <div class="value">WL-8891</div>
+                    </div>
+                    <div class="metadata">
+                        <div class="key">IP:</div>
+                        <div class="value">10.10.2.63</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="audit-card">
+                <div class="audit-details">
+                    <div class="audit-title">
+                        <p>Session revoked (security policy trigger)</p>
+                        <div class="audit-time">2026-01-01 13:15:00</div>
+                    </div>
+                    <div class="audit-severities">
+                        <div class="high-severity">HIGH</div>
+                        <div class="outcome-success">SUCCESS</div>
+                    </div>
+                </div>
+                <div class="audit-metadata">
+                    <div class="metadata">
+                        <div class="key">Actor:</div>
+                        <div class="value">Liam Johnson</div>
+                    </div>
+                    <div class="metadata">
+                        <div class="key">Entity:</div>
+                        <div class="value">Session</div>
+                    </div>
+                    <div class="metadata">
+                        <div class="key">ID:</div>
+                        <div class="value">SESS-55102</div>
+                    </div>
+                    <div class="metadata">
+                        <div class="key">IP:</div>
+                        <div class="value">10.10.9.12</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CSS Assessment Project</p>
+    </footer>
+</body>
+
+</html>
